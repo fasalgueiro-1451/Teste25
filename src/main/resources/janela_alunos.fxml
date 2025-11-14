@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JanelaAlunosController">
+   <children>
+      <Label layoutX="8.0" layoutY="32.0" text="Nome:" />
+      <TextField fx:id="campoNome" layoutX="47.0" layoutY="28.0" prefHeight="25.0" prefWidth="171.0" />
+      <Label layoutX="14.0" layoutY="69.0" text="Nota 1:" />
+      <TextField fx:id="campoNota1" layoutX="55.0" layoutY="65.0" prefHeight="25.0" prefWidth="45.0" />
+      <Label layoutX="113.0" layoutY="69.0" text="Nota 2:" />
+      <TextField fx:id="campoNota2" layoutX="162.0" layoutY="65.0" prefHeight="25.0" prefWidth="45.0" />
+      <Label layoutX="14.0" layoutY="146.0" text="Valor da Bolsa (se aplicável):" />
+      <TextField fx:id="campoBolsa" layoutX="172.0" layoutY="142.0" prefHeight="25.0" prefWidth="59.0" />
+      <RadioButton fx:id="radioComum" layoutX="11.0" layoutY="114.0" mnemonicParsing="false" text="Aluno Comum)" />
+      <RadioButton fx:id="radioBolsista" layoutX="126.0" layoutY="114.0" mnemonicParsing="false" text="Aluno Bolsista" />
+      <Button layoutX="71.0" layoutY="175.0" mnemonicParsing="false" onAction="#aoClicarSalvar" text="Salvar Aluno" />
+      <Label layoutX="9.0" layoutY="210.0" prefHeight="25.0" prefWidth="159.0" text="Nome para Buscar/Deletar:" />
+      <TextField fx:id="campoDeletarNome" layoutX="154.0" layoutY="210.0" prefHeight="25.0" prefWidth="123.0" />
+      <Button layoutX="48.0" layoutY="244.0" mnemonicParsing="false" onAction="#aoClicarDeletar" text="Deletar Aluno" />
+      <Button layoutX="152.0" layoutY="244.0" mnemonicParsing="false" onAction="#aoClicarBuscar" text="Buscar para Editar" />
+      <Button layoutX="92.0" layoutY="289.0" mnemonicParsing="false" onAction="#aoClicarListar" text="Listar Turma" />
+      <TextArea fx:id="areaRelatorio" layoutX="300.0" layoutY="27.0" prefHeight="355.0" prefWidth="276.0" />
+   </children>
+</AnchorPane>
